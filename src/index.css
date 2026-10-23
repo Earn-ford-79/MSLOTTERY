@@ -1,0 +1,82 @@
+:root {
+  font-family: system-ui, 'Segoe UI', sans-serif;
+  color: #fff0c0;
+  background: #180200;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: #180200;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #180200;
+}
+
+#root {
+  width: 100%;
+  max-width: 1126px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: #1b0300;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #ffdf85;
+}
+
+::selection {
+  color: #2a0600;
+  background: #ffd15b;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #210400;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #a84a13;
+}

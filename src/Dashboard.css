@@ -1,0 +1,176 @@
+.dashboard {
+  min-height: 70vh;
+  padding: 24px 5% 40px;
+  color: #fff0c0;
+  background:
+    radial-gradient(ellipse at 50% 10%, #751a08 0%, transparent 65%),
+    linear-gradient(180deg, #280400, #130100 65%, #310600);
+}
+
+.dash-back {
+  padding: 11px 18px;
+  color: #fff0bd;
+  font-weight: 800;
+  background: linear-gradient(135deg, #a82908, #500500);
+  border: 1px solid #f8cb58;
+  border-radius: 10px;
+  box-shadow: 0 0 14px #ff9b2225;
+}
+
+.dash-welcome {
+  position: relative;
+  padding: 34px 0 25px;
+}
+
+.dash-welcome::after {
+  content: '🐉';
+  position: absolute;
+  right: 5px;
+  top: 28px;
+  font-size: clamp(42px, 10vw, 76px);
+  opacity: .8;
+  filter: drop-shadow(0 0 12px #ff9e20);
+  pointer-events: none;
+}
+
+.dash-label {
+  color: #ffcf56;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.dash-welcome h1 {
+  max-width: 85%;
+  font-size: clamp(25px, 6vw, 38px);
+  overflow-wrap: anywhere;
+  color: #fff0bd;
+  text-shadow: 0 2px #a94305, 0 0 18px #ff760055;
+}
+
+.dash-welcome p {
+  color: #e8c99a;
+  line-height: 1.8;
+}
+
+.dash-balance {
+  position: relative;
+  overflow: hidden;
+  padding: 26px;
+  border: 1px solid #ffda70;
+  border-radius: 20px;
+  background:
+    radial-gradient(ellipse at 100% 0%, #a83808, transparent 60%),
+    linear-gradient(125deg, #720e02, #330400 75%);
+  box-shadow: 0 0 26px #ff640025, inset 0 0 22px #ffc13c12;
+}
+
+.dash-balance::after {
+  content: '🪙';
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  font-size: 43px;
+  opacity: .85;
+  filter: drop-shadow(0 0 10px #ffb600);
+}
+
+.dash-balance p {
+  color: #ffdc7c;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.dash-balance h2 {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(32px, 8vw, 46px);
+  margin: 12px 0;
+  color: #fff0a0;
+  text-shadow: 0 0 18px #ffb30055;
+}
+
+.dash-balance h2 span {
+  color: #ffc14b;
+  font-size: 14px;
+}
+
+.dash-balance small,
+.dash-note {
+  color: #e5c69a;
+}
+
+.dash-details {
+  margin-top: 22px;
+  padding: 22px;
+  border: 1px solid #a86c2b;
+  border-radius: 18px;
+  background:
+    radial-gradient(ellipse at 100% 0%, #65150655, transparent 60%),
+    linear-gradient(145deg, #3b0802, #1b0200);
+  box-shadow: inset 0 0 22px #ffb31a0a, 0 8px 20px #0003;
+}
+
+.dash-details h2 {
+  font-size: 20px;
+  margin-top: 0;
+  color: #ffdf85;
+  text-shadow: 0 0 10px #ff9c2630;
+}
+
+.dash-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid #71401d;
+}
+
+.dash-row:last-child {
+  border-bottom: 0;
+}
+
+.dash-row span {
+  color: #e5c69a;
+}
+
+.dash-row strong {
+  overflow-wrap: anywhere;
+  text-align: right;
+  color: #fff0c0;
+}
+
+.dash-active {
+  color: #8ff0a0 !important;
+}
+
+.dash-note {
+  margin-top: 22px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+@media (max-width: 480px) {
+  .dashboard {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+
+  .dash-balance,
+  .dash-details {
+    padding: 18px;
+  }
+
+  .dash-balance::after {
+    right: 12px;
+    top: 38px;
+    font-size: 32px;
+  }
+
+  .dash-row {
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
